@@ -1,0 +1,37 @@
+{
+
+    "manifest_version": 2,
+    "name": "DeClutter",
+    "version": "2.2.5",
+  
+    "description": "Declutters the web",
+  
+    "icons": {
+      "96": "icons/stack_prettifier-96.png"
+    },
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "declutter@example.com"
+		}
+	},
+
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.stackoverflow.com/*", "*://*.stackexchange.com/*"],
+        "js": ["stackexchange.js"]
+      },
+
+			{
+      "matches": ["*://*.google.com/*"],
+      "js": ["google.js"]
+			},
+
+			{
+      "matches": ["*://*.quora.com/*"],
+      "js": ["quora.js"]
+			}
+    ]
+  
+  }
