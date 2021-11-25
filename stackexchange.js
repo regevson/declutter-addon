@@ -4,15 +4,13 @@ mainbar.style.width = '100%';
 var content = document.getElementById("content");
 content.style.borderRadius = '15px';
 
-var topbar = document.getElementsByClassName("top-bar");
-topbar = topbar[0];
+var topbar = document.getElementsByClassName("top-bar")[0];
 topbar.remove();
 
 var leftsidebar = document.getElementById("left-sidebar");
 leftsidebar.remove();
 
-var body = document.getElementsByClassName("question-page");
-body = body[0];
+var body = document.getElementsByClassName("question-page")[0];
 body.style.padding = "0";
 body.style.background = "rgb(49, 49, 49)";
 body.style.marginTop = "35px";
