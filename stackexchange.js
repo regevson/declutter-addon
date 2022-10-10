@@ -1,10 +1,16 @@
+var footer = document.getElementById("footer");
+footer.style.display = "none";
+
+var form = document.getElementById("post-form");
+form.style.display = "none";
+
 var mainbar = document.getElementById("mainbar");
 mainbar.style.width = '100%';
 
 var content = document.getElementById("content");
 content.style.borderRadius = '15px';
 
-var topbar = document.getElementsByClassName("top-bar")[0];
+var topbar = document.getElementsByClassName("s-topbar")[0];
 topbar.remove();
 
 var leftsidebar = document.getElementById("left-sidebar");
@@ -19,18 +25,12 @@ var header = document.getElementsByClassName("site-header");
 header = header[0];
 header.remove();
 
+var questionH = document.getElementsByClassName("question-hyperlink")[0];
+questionH.style.fontWeight = "bold";
+questionH.style.fontFamily = "Arial";
 
-//var sidebar = document.getElementById("sidebar");
-//sidebar.parentNode.removeChild(sidebar);
-
-
+var banner = document.getElementsByClassName("py24")[0];
+banner.style.display = "none";
 
 var leftsidebar = document.getElementById("left-sidebar");
 leftsidebar.parentNode.removeChild(leftsidebar);
-
-var banner = document.getElementById("js-gdpr-consent-banner");
-banner.parentNode.removeChild(banner);
-
-var footer = document.getElementById("footer");
-footer.parentNode.removeChild(footer);
-
