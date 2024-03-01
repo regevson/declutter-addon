@@ -46,10 +46,19 @@ function exec() {
     element.style.background = "none";
   });
 
+  // gpt model text
+  elements = document.querySelectorAll('.group.flex.cursor-pointer.items-center.gap-1.rounded-xl > div');
+  elements.forEach(function(element) {
+    if(element.textContent === "ChatGPT 4")
+      element.textContent = "4";
+    else
+      element.textContent = "3";
+  });
+
   // gpt model
   elements = document.querySelectorAll('.group.flex.cursor-pointer.items-center.gap-1.rounded-xl');
   elements.forEach(function(element) {
-    element.style.background = "#343541";
+    element.style.background = "#171717";
     element.style.padding = "3px";
     element.style.textAlign = "center";
     element.style.width = "fit-content";
@@ -58,7 +67,7 @@ function exec() {
   // change background of entire chat section
   elements = document.querySelectorAll('.relative.h-full.w-full.flex-1.overflow-auto.transition-width');
   elements.forEach(function(element) {
-    element.style.background = "#202123";
+    element.style.background = "#171717";
   });
   
   // change background of prompt textfield
